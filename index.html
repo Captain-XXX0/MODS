@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="referrer" content="no-referrer">
+<title>مودات ماين كرافت</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bgs" aria-hidden="true"><div class="bg on" style="--local:url('images/bg1.jpg');--img:url('https://c4.wallpaperflare.com/wallpaper/65/979/797/video-games-minecraft-wallpaper-preview.jpg')"></div><div class="bg" style="--local:url('images/bg2.jpg');--img:url('https://c4.wallpaperflare.com/wallpaper/971/920/855/minecraft-video-games-wallpaper-preview.jpg')"></div><div class="bg" style="--local:url('images/bg3.jpg');--img:url('https://c4.wallpaperflare.com/wallpaper/137/602/354/video-game-minecraft-mojang-steve-minecraft-wallpaper-thumb.jpg')"></div><div class="bg" style="--local:url('images/bg4.jpg');--img:url('https://c4.wallpaperflare.com/wallpaper/135/845/150/minecraft-video-games-wallpaper-preview.jpg')"></div></div>
+<main class="wrap">
+  <header class="hero">
+    <h1>قائمة المودات<span class="splash">اختار وانسخ!</span></h1>
+    <p>انسخ الاسم، وافتح المود على Modrinth أو CurseForge.</p>
+  </header>
+
+  <section class="tools" aria-label="الأدوات">
+    <div class="add">
+      <input id="newName" placeholder="اسم مود جديد، مثال: Create" aria-label="اسم المود">
+      <input id="newReq" placeholder="يحتاج (اختياري): Citadel, GeckoLib" aria-label="المتطلبات">
+      <button class="primary" id="addBtn" type="button">إضافة</button>
+    </div>
+    <div class="find">
+      <input id="q" type="search" placeholder="ابحث في القائمة" aria-label="بحث">
+      <button id="copyAll" type="button">نسخ الظاهر</button>
+    </div>
+    <div class="chips" id="chips"></div>
+    <p class="count" id="count"></p>
+  </section>
+
+  <div id="out"></div>
+</main>
+<div class="toast" id="toast" role="status"></div>
+<script src="script.js"></script>
+</body>
+</html>
